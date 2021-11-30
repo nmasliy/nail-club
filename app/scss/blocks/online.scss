@@ -1,0 +1,67 @@
+.online {
+    padding-top: 146px;
+    padding-bottom: 110px;
+    background: url('../images/dist/decor-2.svg') top 50px right 410px / 142px 140px,
+                url('../images/dist/decor-5.svg') top 0 right 154px;
+    background-repeat: no-repeat;
+    
+    &__inner {
+    }
+
+    &__title {
+        max-width: 600px;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -30px;
+        padding-bottom: 90px;
+    }
+
+    &__item {
+        width: calc(25% - 60px);
+        margin: 0 30px;
+    }
+
+    &__num {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background-color: $accent;
+        border-radius: 50%;
+        margin: 10px;
+        margin-bottom: 30px;
+
+        svg {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__num-content {
+        font-family: 'GothamPro-Black', sans-serif;
+        color: $white;
+        font-weight: 900;
+        font-size: 36px;
+    }
+
+    &__item-name {
+        font-family: 'GothamPro-Medium', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &__btn {
+    }
+
+    &__btn-wrapper {
+        text-align: center;
+    }
+}

@@ -1,0 +1,89 @@
+.lead {
+    background: url('../images/dist/decor-2.svg') top 50% right -18px / 182px 186px,
+                url('../images/dist/decor-12.svg') bottom 58px left 43%;
+    background-repeat: no-repeat;
+    background-color: #F8F8F8;
+    margin: 70px 0;    
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__img {
+        width: calc(32%  - 66px);
+        margin: -70px 0;
+    }
+
+    &__content {
+        padding-right: 70px;
+        margin-left: 66px;
+        width: 68%;
+    }
+
+    &__form {
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        padding-bottom: 30px;
+    }
+
+    &__item {
+        width: calc(50% - 30px);
+        margin: 0 15px;
+        margin-bottom: 20px;
+        
+        input {
+            width: 100%;
+        }
+    }
+
+    &__btn-wrapper {
+        text-align: center;
+    }
+
+    &__btn {
+    }
+}
+
+.form {
+
+    &__select {
+        
+        .nice-select {
+            line-height: 1;
+            height: auto;
+            width: 100%;
+            float: none;
+            display: inline-block;
+            background-color: $white;
+            border-radius: 10px;
+            padding: 18px 25px;
+            padding-left: 50px;
+            background-position: left 15px center;
+            background-repeat: no-repeat;
+            margin: 0;
+            font-size: 18px;
+            color: #535353;
+            border: 1px solid #535353;
+            border-radius: 15px;
+            &::after {
+                display: none;
+            }
+        }
+    }
+    &__school-select {
+        .nice-select {
+            background-image: url('../images/dist/lead-icon-3.svg');
+        }
+    }
+    &__course-select {
+        .nice-select {
+            background-image: url('../images/dist/lead-icon-4.svg');
+        }
+    }
+}

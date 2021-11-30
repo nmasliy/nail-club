@@ -1,0 +1,146 @@
+.courses {
+    padding-top: 50px;
+    .container {
+        max-width: 1500px;
+    }
+    
+    .swiper-pagination {
+        display: none;
+    }
+
+    &__title {
+        margin-left: 86px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        color: $white;
+    }
+    
+    &__col {
+        width: 33.333%;
+
+        &:first-child {
+            margin-top: 123px;
+        }
+        &:nth-child(2) {
+            margin-top: 46px;
+            .courses__item-header {
+                margin-bottom: 20px;
+            }
+            img {
+                top: 50px;
+            }
+        }
+        &:nth-child(3) {
+            margin-top: -90px;
+            .courses__item-header {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: $green;
+        border-radius: 15px;
+        padding: 30px 20px;
+        margin: 0 15px;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item-header {
+        position: relative;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        width: 100%;
+
+        img {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+
+        b,strong {
+            font-weight: 900;
+            font-family: 'GothamPro-Black', sans-serif;
+        }
+    }
+
+    &__item-body {
+        margin-bottom: 35px;
+        b,strong {
+            font-weight: bold;
+            font-family: 'GothamPro-Bold', sans-serif;
+        }
+        div {
+            margin: 3px 0;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+    }
+
+    &__item-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item-col {
+        width: 50%;
+    }
+
+    &__item-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__item-price {
+        border: 2px dashed $white;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin-right: 20px;
+        b {
+            display: block;
+            font-size: 24px;
+            font-weight: 900;
+            color: $accent;
+            font-family: 'GothamPro-Black', sans-serif;
+        }
+        span {
+            display: block;
+            font-size: 15px;
+        }
+    }
+
+    &__item-btn {
+    }
+
+    &__banner {
+        position: relative;
+        background: url('../images/dist/courses-1.png') center / cover no-repeat;
+        height: 520px;
+        color: $black;
+    }
+
+    &__banner-text {
+        position: absolute;
+        right: 25px;
+        bottom: 55px;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: 'GothamPro-Medium', sans-serif;
+        text-align: center;
+        max-width: 250px;
+    }
+}

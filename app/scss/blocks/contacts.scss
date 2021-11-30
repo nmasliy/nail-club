@@ -1,0 +1,60 @@
+.contacts {
+    padding-top: 70px;
+    padding-bottom: 80px;
+    background: url('../images/dist/decor-11.svg') top 117px left 40%  no-repeat;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content {
+        width: 40%;
+    }
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__list {
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 25px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__icon {
+        margin-right: 20px;
+        flex-shrink: 0;
+    }
+
+    &__item-content {
+        b, strong {
+            display: block;
+            font-family: 'GothamPro-Medium', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        div {
+            color: #535353;
+        }
+        a {
+            font-family: 'GothamPro-Medium', sans-serif;
+            font-weight: 500;
+            color: $accent;
+            word-break: break-all;
+        }
+    }
+
+    &__img {
+        margin-left: 120px;
+        width: calc(60% - 120px);
+    }
+}
