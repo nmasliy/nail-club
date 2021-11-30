@@ -216,7 +216,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         $phones.forEach(item => {
             IMask(item, {
-                mask: '+{380}(00)00-00',
+                mask: '+{38\\0}(00)000-00-00',
             });
         })
     }
